@@ -41,7 +41,7 @@
 .note { margin-left: 15px; background-color: rgb(255, 255, 225)
 }
 
-li{ margin-bottom: 6px}
+li{ margin-bottom: 6px;}
 
 a[href^="http://habrahabr.ru"] {
     padding-left: 20px !important;
@@ -57,6 +57,7 @@ a[href^="https://github.com"] {
     padding-left: 20px !important;
     background: url(../img/github.png) no-repeat center left;
 }
+
 /* Header
 
 -------------------------------------------------------------- */
@@ -72,6 +73,9 @@ a[href^="https://github.com"] {
 -------------------------------------------------------------- */
 
 #body { margin-top: 20px; }
+
+#body li { margin-top: 12px;}
+#body td .nonLine {border-bottom: none; font-weight:bold; padding-bottom: 0;}
 
 #introduction { float: left; width: 480px; margin-right: 130px; }
 
