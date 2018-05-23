@@ -4,12 +4,10 @@
    * Version:   0.5 (2007-11-19)
    
 -------------------------------------------------------------- */
-
 @import "lib/reset.css";
 @import "lib/typography.css";
 @import "lib/forms.css";
 @import "lib/plugins/tabs.css";
-
 
 /* Page
 -------------------------------------------------------------- */
@@ -25,23 +23,31 @@
     top: 50px !important;
 }
 
-.toc   { font-size: 1.2em; font-weight: bolder;}
+.toc {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
 
-#page { margin: 0 auto;
+#page {
+    margin: 0 auto;
     width: 900px;
     padding: 0px 18px 18px;
-    background: url("../img/gridbg.png") 
-    repeat scroll 50% 0px transparent;
+    background: url("../img/gridbg.png") repeat scroll 50% 0px transparent;
 }
 
-#cv { margin: 0 auto;
+#cv {
+    margin: 0 auto;
     width: 900px;
 }
 
-.note { margin-left: 15px; background-color: rgb(255, 255, 225)
+.note {
+    margin-left: 15px;
+    background-color: rgb(255, 255, 225)
 }
 
-li{ margin-bottom: 6px;}
+li {
+    margin-bottom: 6px;
+}
 
 a[href^="http://habrahabr.ru"] {
     padding-left: 20px !important;
@@ -62,104 +68,228 @@ a[href^="https://github.com"] {
 
 -------------------------------------------------------------- */
 
-#header { margin-top: 20px; }
+/*#header { margin-top: 20px; }*/
 
-#header .tabs { border-bottom: 1px solid #ddd; }
-#header .tabs li { margin-right: 1px; }
-#header .tabs a { padding: 5px 15px; background: #ddd; color: #666; text-decoration: none; }
+#header .tabs {
+    border-bottom: 1px solid #ddd;
+}
 
+#header .tabs li {
+    margin-right: 1px;
+}
+
+#header .tabs a {
+    padding: 5px 15px;
+    text-decoration: none;
+}
 
 /* Body
 -------------------------------------------------------------- */
 
-#body { margin-top: 20px; }
+HTML {
+    background: url("../img/fon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; /* Путь к графическому файлу с первым фоном */
+}
 
-#body table .pp {margin-bottom: 0}
-#body li { margin-top: 12px;}
-#body td .nonLine {border-bottom: none; font-weight:bold; padding-bottom: 0;}
+BODY {
+    background: url("../img/planshet.png");
+    background-size: 90% 100%;
 
-#introduction { float: left; width: 480px; margin-right: 130px; }
+    min-width: 1200px;
+    background-position: center;
+    background-repeat: no-repeat; /* Путь к графическому файлу с первым фоном */
+}
 
-#resources { float: left; width: 230px; }
-#resources h3 { color: #888; }
-#resources ul, #resources ol { color: #888; }
-#resources ul a { color: #555; }
+#body {
+    margin-top: 20px;
+}
 
+#body table .pp {
+    margin-bottom: 0
+}
+
+#body li {
+    margin-top: 12px;
+}
+
+#body td .nonLine {
+    border-bottom: none;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+#introduction {
+    float: left;
+    width: 480px;
+    margin-right: 130px;
+}
+
+#resources {
+    float: left;
+    width: 230px;
+}
+
+#resources h3 {
+    color: #888;
+}
+
+#resources ul, #resources ol {
+    color: #888;
+}
+
+#resources ul a {
+    color: #555;
+}
 
 /* Footer
 -------------------------------------------------------------- */
-#footer { border-top: 1px solid #eee; margin-top: 20px; }
+#footer {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+}
 
-#footer .tabs { width: 405px; border-top: 3px solid #eee; }
-#footer .tabs a { padding: 10px 30px 10px 0; color: #666; text-decoration: none; }
+#footer .tabs {
+    width: 405px;
+    border-top: 3px solid #eee;
+}
 
-#footer p.quiet { color: #ccc; }
+#footer .tabs a {
+    padding: 10px 30px 10px 0;
+    color: #666;
+    text-decoration: none;
+}
 
-.ucoz-top-banner {display:none !important;}
-#bn {display:none !important;}
-#bt {display:none !important;}
+#footer p.quiet {
+    color: #ccc;
+}
 
+.ucoz-top-banner {
+    display: none !important;
+}
 
-/* Java code 
+#bn {
+    display: none !important;
+}
+
+#bt {
+    display: none !important;
+}
+
+/* Java code
 -------------------------------------------------------------- */
-.s4{color:rgb(0,0,0);font-weight:normal;font-style:normal;}
-.s12{color:rgb(0,0,0);font-weight:normal;font-style:italic;}
-.s15{color:rgb(0,0,0);background-color:rgb(246,235,188);font-weight:normal;font-style:normal;}
+.s4 {
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    font-style: normal;
+}
 
-.s5 {color:#808080;font-style:italic;font-weight:bold;}
-.s7 {color:#808000;font-style:normal;font-weight:normal;}
+.s12 {
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    font-style: italic;
+}
 
-.s2{color:rgb(128,128,128);font-weight:normal;font-style:italic;}
+.s15 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(246, 235, 188);
+    font-weight: normal;
+    font-style: normal;
+}
 
-.s10{color:rgb(0,128,0);font-weight:bold;font-style:normal;}
+.s5 {
+    color: #808080;
+    font-style: italic;
+    font-weight: bold;
+}
 
-.s1{color:rgb(0,0,128);font-weight:bold;font-style:normal;}
-.s11{color:rgb(0,0,255);font-weight:normal;font-style:normal;}
+.s7 {
+    color: #808000;
+    font-style: normal;
+    font-weight: normal;
+}
 
-.s3{color:#660E7A;font-style:italic;font-weight:bold;}
-.s16{color:rgb(255,0,0);font-weight:normal;font-style:normal;}
+.s2 {
+    color: rgb(128, 128, 128);
+    font-weight: normal;
+    font-style: italic;
+}
 
-.s17 {color:#000043;font-style:normal;font-weight:bold;}
+.s10 {
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+    font-style: normal;
+}
+
+.s1 {
+    color: rgb(0, 0, 128);
+    font-weight: bold;
+    font-style: normal;
+}
+
+.s11 {
+    color: rgb(0, 0, 255);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.s3 {
+    color: #660E7A;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.s16 {
+    color: rgb(255, 0, 0);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.s17 {
+    color: #000043;
+    font-style: normal;
+    font-weight: bold;
+}
 
 /* Java code
 -------------------------------------------------------------- */
 #grass {
-background-image: url(../img/grass.png);
-background-position: left bottom;
-background-repeat: repeat-x;
-bottom: 0;
-height: 118px;
-position: fixed;
-width: 100%;
-z-index: 5;
+    background-image: url(../img/grass.png);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    bottom: 0;
+    height: 118px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 
-a[href^="cv.html"],a[href^="../en/cv_en.html"]{
+a[href^="cv.html"], a[href^="../en/cv_en.html"] {
     padding-left: 20px;
     background: url(../img/html.png) no-repeat center left;
 }
 
-a[href^="mailto:"]{
+a[href^="mailto:"] {
     padding-left: 20px;
     background: url(../img/email.png) no-repeat center left;
 }
 
-a[href^="http://vk.com"]{
+a[href^="http://vk.com"] {
     padding-left: 20px;
     background: url(../img/vk.gif) no-repeat center left;
 }
 
-a[href^="http://www.youtube.com"]{
+a[href^="http://www.youtube.com"] {
     padding-left: 20px;
     background: url(http://s.ytimg.com/yts/img/favicon-vfldLzJxy.ico) no-repeat center left;
 }
 
-a[href^="skype:"]{
+a[href^="skype:"] {
     padding-left: 20px;
     background: url(../img/skype.png) no-repeat center left;
 }
 
-a[href$=".pdf"]{
+a[href$=".pdf"] {
     padding-left: 20px;
     background: url(../img/pdf.png) no-repeat center left;
 }
