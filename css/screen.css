@@ -31,8 +31,8 @@
 #page {
     margin: 0 auto;
     width: 900px;
-    padding: 0px 18px 18px;
-    background: url("../img/gridbg.png") repeat scroll 50% 0px transparent;
+    padding: 0 18px 18px;
+    /*background: url("../img/gridbg.png") repeat scroll 50% 0px transparent;*/
 }
 
 #cv {
@@ -49,20 +49,16 @@ li {
     margin-bottom: 6px;
 }
 
-a[href^="http://habrahabr.ru"] {
-    padding-left: 20px !important;
-    background: url(../img/habrahabr.png) no-repeat center left;
-}
+/*a[href^="http://habrahabr.ru"] {*/
+    /*padding-left: 20px !important;*/
+    /*background: url(../img/habrahabr.png) no-repeat center left;*/
+/*}*/
 
-a[href^="http://stackoverflow.com"] {
-    padding-left: 20px !important;
-    background: url(../img/so.png) no-repeat center left;
-}
+/*a[href^="http://stackoverflow.com"] {*/
+    /*padding-left: 20px !important;*/
+    /*background: url(../img/so.png) no-repeat center left;*/
+/*}*/
 
-a[href^="https://goo.gl"] {
-    padding-left: 20px !important;
-    background: url(../img/google.png) no-repeat center left;
-}
 
 a[href^="https://github.com"] {
     padding-left: 20px !important;
@@ -92,18 +88,17 @@ a[href^="https://github.com"] {
 -------------------------------------------------------------- */
 
 HTML {
-    background: url("../img/fon.jpg");
     background-size: cover;
-    background-repeat: no-repeat; /* Путь к графическому файлу с первым фоном */
+    /* Путь к графическому файлу с первым фоном */
+    background: url("../img/fon.jpg") no-repeat;
 }
 
 BODY {
-    background: url("../img/planshet.png");
     background-size: 90% 100%;
 
     min-width: 1200px;
-    background-position: center;
-    background-repeat: no-repeat; /* Путь к графическому файлу с первым фоном */
+    /* Путь к графическому файлу с первым фоном */
+    background: url("../img/planshet.png") no-repeat center;
 }
 
 #body {
@@ -259,9 +254,8 @@ BODY {
 /* Java code
 -------------------------------------------------------------- */
 #grass {
-    background-image: url(../img/grass.png);
-    background-position: left bottom;
-    background-repeat: repeat-x;
+    /*background-image: url(../img/grass.png);*/
+    background: repeat-x left bottom;
     bottom: 0;
     height: 118px;
     position: fixed;
@@ -281,7 +275,7 @@ a[href^="mailto:"] {
 
 a[href^="http://vk.com"] {
     padding-left: 20px;
-    background: url(../img/vk.gif) no-repeat center left;
+    /*background: url(../img/vk.gif) no-repeat center left;*/
 }
 
 a[href^="http://www.youtube.com"] {
@@ -293,8 +287,12 @@ a[href^="skype:"] {
     padding-left: 20px;
     background: url(../img/skype.png) no-repeat center left;
 }
+a[href^="https://goo.gl"] {
+    padding-left: 20px;
+    background: url(../img/google.png) no-repeat center left;
+}
 
 a[href$=".pdf"] {
     padding-left: 20px;
-    background: url(../img/pdf.png) no-repeat center left;
+    /*background: url(../img/pdf.png) no-repeat center left;*/
 }
