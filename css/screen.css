@@ -59,6 +59,11 @@ a[href^="http://stackoverflow.com"] {
     background: url(../img/so.png) no-repeat center left;
 }
 
+a[href^="https://goo.gl"] {
+    padding-left: 20px !important;
+    background: url(../img/google.png) no-repeat center left;
+}
+
 a[href^="https://github.com"] {
     padding-left: 20px !important;
     background: url(../img/github.png) no-repeat center left;
