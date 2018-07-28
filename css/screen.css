@@ -31,7 +31,7 @@
 #page {
     margin: 0 auto;
     width: 900px;
-    padding: 0 18px 18px;
+    padding: 0px 18px 18px;
     /*background: url("../img/gridbg.png") repeat scroll 50% 0px transparent;*/
 }
 
@@ -49,16 +49,15 @@ li {
     margin-bottom: 6px;
 }
 
-/*a[href^="http://habrahabr.ru"] {*/
-    /*padding-left: 20px !important;*/
+a[href^="http://habrahabr.ru"] {
+    padding-left: 20px !important;
     /*background: url(../img/habrahabr.png) no-repeat center left;*/
-/*}*/
+}
 
-/*a[href^="http://stackoverflow.com"] {*/
-    /*padding-left: 20px !important;*/
+a[href^="http://stackoverflow.com"] {
+    padding-left: 20px !important;
     /*background: url(../img/so.png) no-repeat center left;*/
-/*}*/
-
+}
 
 a[href^="https://github.com"] {
     padding-left: 20px !important;
@@ -88,17 +87,18 @@ a[href^="https://github.com"] {
 -------------------------------------------------------------- */
 
 HTML {
+    background: url("../img/fon.jpg");
     background-size: cover;
-    /* Путь к графическому файлу с первым фоном */
-    background: url("../img/fon.jpg") no-repeat;
+    background-repeat: no-repeat; /* Путь к графическому файлу с первым фоном */
 }
 
 BODY {
+    background: url("../img/planshet.png");
     background-size: 90% 100%;
 
     min-width: 1200px;
-    /* Путь к графическому файлу с первым фоном */
-    background: url("../img/planshet.png") no-repeat center;
+    background-position: center;
+    background-repeat: no-repeat; /* Путь к графическому файлу с первым фоном */
 }
 
 #body {
@@ -255,7 +255,8 @@ BODY {
 -------------------------------------------------------------- */
 #grass {
     /*background-image: url(../img/grass.png);*/
-    background: repeat-x left bottom;
+    background-position: left bottom;
+    background-repeat: repeat-x;
     bottom: 0;
     height: 118px;
     position: fixed;
